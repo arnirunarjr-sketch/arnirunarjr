@@ -95,21 +95,55 @@
     a {
       color: #f59e0b;
     }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      width: 100%;
+    }
+    .hero-text { flex: 1; }
+    .profile-image {
+      width: 320px;
+      height: 320px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 3px solid #1f2937;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .profile-image {
+        width: 240px;
+        height: 240px;
+      }
+      h1 { font-size: 42px; }
+    }
+
   </style>
 </head>
 
 <body>
   <main class="container">
     <section class="hero">
-      <div>
-        <div class="tag">Business Development · IT Advisory · Managed Services</div>
-        <h1>Árni Rúnar Birnuson</h1>
-        <p class="lead">
-          Ég hjálpa fyrirtækjum að tengja saman tækni, öryggi, rekstur og viðskiptalegan árangur.
-        </p>
-        <div class="buttons">
-          <a class="button primary" href="mailto:arnirunarjr@gmail.com">Hafa samband</a>
-          <a class="button secondary" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="tag">Business Development · IT Advisory · Managed Services</div>
+          <h1>Árni Rúnar Birnuson</h1>
+          <p class="lead">
+            Ég hjálpa fyrirtækjum að tengja saman tækni, öryggi, rekstur og viðskiptalegan árangur.
+          </p>
+          <div class="buttons">
+            <a class="button primary" href="mailto:arnirunarjr@gmail.com">Hafa samband</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/arnirunarjr/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/arni.jpg" alt="Árni Rúnar Birnuson" class="profile-image">
         </div>
       </div>
     </section>
@@ -117,8 +151,8 @@
     <section>
       <h2>Um mig</h2>
       <p>
-        Ég hef starfað í upplýsingatækni í yfir áratug með áherslu á rekstur,
-        þjónustu, innviði og viðskiptaþróun. Ferillinn minn spannar allt frá
+        Ég er upplýsingatæknimaður, ráðgjafi og stjórnandi með yfir 20 ára reynslu af rekstri,
+        þjónustu, innviðum og viðskiptaþróun. Ferillinn minn spannar allt frá
         daglegum IT rekstri og þjónustuborði yfir í stefnumótun, ráðgjöf,
         öryggismál og þróun þjónustuframboðs.
       </p>
