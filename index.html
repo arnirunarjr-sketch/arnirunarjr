@@ -10,90 +10,19 @@
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e5e7eb;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 40px 24px;
     }
+
     .hero {
       min-height: 80vh;
       display: flex;
       align-items: center;
-    }
-    .tag {
-      color: #f59e0b;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    h1 {
-      font-size: 56px;
-      line-height: 1.1;
-      margin: 16px 0;
-      color: white;
-    }
-    h2 {
-      color: white;
-      font-size: 32px;
-      margin-top: 60px;
-    }
-    h3 {
-      color: #f59e0b;
-      margin-bottom: 8px;
-    }
-    .lead {
-      font-size: 22px;
-      max-width: 760px;
-      color: #cbd5e1;
-    }
-    .buttons {
-      margin-top: 32px;
-    }
-    .button {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 8px;
-      margin-right: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .primary {
-      background: #f59e0b;
-      color: #111827;
-    }
-    .secondary {
-      border: 1px solid #475569;
-      color: #e5e7eb;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-      margin-top: 24px;
-    }
-    .card {
-      background: #111827;
-      border: 1px solid #1f2937;
-      border-radius: 14px;
-      padding: 24px;
-    }
-    .timeline {
-      border-left: 2px solid #334155;
-      padding-left: 24px;
-    }
-    .timeline-item {
-      margin-bottom: 28px;
-    }
-    footer {
-      margin-top: 80px;
-      padding: 30px 0;
-      border-top: 1px solid #1f2937;
-      color: #94a3b8;
-    }
-    a {
-      color: #f59e0b;
     }
 
     .hero-content {
@@ -103,32 +32,146 @@
       gap: 60px;
       width: 100%;
     }
-    .hero-text { flex: 1; }
+
+    .hero-text {
+      flex: 1;
+    }
+
     .profile-image {
       width: 320px;
       height: 320px;
-      border-radius: 16px;
       object-fit: cover;
+      border-radius: 16px;
       border: 3px solid #1f2937;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
     }
+
+    .tag {
+      color: #f59e0b;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin: 16px 0;
+      color: white;
+    }
+
+    h2 {
+      color: white;
+      font-size: 32px;
+      margin-top: 70px;
+    }
+
+    h3 {
+      color: #f59e0b;
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 22px;
+      color: #cbd5e1;
+      max-width: 760px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #f59e0b;
+      color: #111827;
+    }
+
+    .secondary {
+      border: 1px solid #475569;
+      color: #e5e7eb;
+    }
+
+    .grid,
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .card,
+    .stat {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      color: #f59e0b;
+      margin-bottom: 6px;
+    }
+
+    .timeline {
+      border-left: 2px solid #334155;
+      padding-left: 24px;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid #1f2937;
+      padding: 30px 0;
+      color: #94a3b8;
+    }
+
+    a {
+      color: #f59e0b;
+    }
+
     @media (max-width: 768px) {
       .hero-content {
         flex-direction: column-reverse;
         text-align: center;
       }
+
       .profile-image {
         width: 240px;
         height: 240px;
       }
-      h1 { font-size: 42px; }
-    }
 
+      h1 {
+        font-size: 42px;
+      }
+
+      .button {
+        margin-bottom: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main class="container">
+
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
@@ -137,11 +180,13 @@
           <p class="lead">
             Ég hjálpa fyrirtækjum að tengja saman tækni, öryggi, rekstur og viðskiptalegan árangur.
           </p>
+
           <div class="buttons">
             <a class="button primary" href="mailto:arnirunarjr@gmail.com">Hafa samband</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/arnirunarjr/" target="_blank">LinkedIn</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/%C3%A1rni-r%C3%BAnar-birnuson-20a587103/" target="_blank">LinkedIn</a>
           </div>
         </div>
+
         <div>
           <img src="images/arni.jpg" alt="Árni Rúnar Birnuson" class="profile-image">
         </div>
@@ -152,15 +197,45 @@
       <h2>Um mig</h2>
       <p>
         Ég er upplýsingatæknimaður, ráðgjafi og stjórnandi með yfir 20 ára reynslu af rekstri,
-        þjónustu, innviðum og viðskiptaþróun. Ferillinn minn spannar allt frá
-        daglegum IT rekstri og þjónustuborði yfir í stefnumótun, ráðgjöf,
-        öryggismál og þróun þjónustuframboðs.
+        þjónustu, innviðum, öryggi og viðskiptaþróun.
       </p>
       <p>
-        Í dag starfa ég við viðskiptaþróun hjá Tölvuþjónustunni þar sem ég vinn
-        með fyrirtækjum að því að hámarka virði upplýsingatækninnar, bæta
-        rekstraröryggi og draga úr tækniskuld.
+        Á ferlinum hef ég starfað bæði hjá þjónustufyrirtækjum og í stærri rekstrarumhverfum,
+        meðal annars við daglegan IT rekstur, þjónustustjórnun, stefnumótun, umbætur,
+        ráðgjöf og þróun þjónustuframboðs.
       </p>
+      <p>
+        Í dag starfa ég við viðskiptaþróun hjá Tölvuþjónustunni þar sem ég vinn með
+        fyrirtækjum að því að hámarka virði upplýsingatækninnar, bæta rekstraröryggi
+        og draga úr tækniskuld.
+      </p>
+      <p>
+        Menntun mín sameinar upplýsingatækni og viðskipti. Ég lauk BS gráðu í
+        viðskiptafræði frá Háskólanum á Bifröst og hef einnig sérhæft mig í
+        net- og kerfisstjórnun frá NTV.
+      </p>
+    </section>
+
+    <section>
+      <h2>Árangur í tölum</h2>
+      <div class="stats">
+        <div class="stat">
+          <strong>20+</strong>
+          Ár í upplýsingatækni
+        </div>
+        <div class="stat">
+          <strong>10+</strong>
+          Ár í rekstri, þjónustu og innviðum
+        </div>
+        <div class="stat">
+          <strong>100+</strong>
+          Verkefni og ráðgjafaverkefni
+        </div>
+        <div class="stat">
+          <strong>24/7</strong>
+          Rekstrar- og öryggishugsun
+        </div>
+      </div>
     </section>
 
     <section>
@@ -172,11 +247,11 @@
         </div>
         <div class="card">
           <h3>Microsoft Cloud</h3>
-          <p>Microsoft 365, Intune, Entra ID, Teams, öryggi og nútímavæðing vinnuumhverfis.</p>
+          <p>Microsoft 365, Intune, Entra ID, Teams og nútímalegt vinnuumhverfi.</p>
         </div>
         <div class="card">
           <h3>Cyber Security</h3>
-          <p>Öryggisráðgjöf, áhættugreiningar, veikleikastjórnun og umbætur á öryggisstöðu.</p>
+          <p>Öryggisráðgjöf, veikleikastjórnun, áhættugreiningar og umbætur á öryggisstöðu.</p>
         </div>
         <div class="card">
           <h3>AI & Automation</h3>
@@ -197,13 +272,36 @@
         <div class="timeline-item">
           <h3>Nova</h3>
           <p><strong>Head of IT Operations</strong></p>
-          <p>Leiddi þróun og stöðugleika í innri upplýsingatækni, þjónustu, rekstri og umbótaverkefnum.</p>
+          <p>Leiddi þróun, stöðugleika og umbætur í innri upplýsingatækni, þjónustu og rekstri.</p>
         </div>
 
         <div class="timeline-item">
           <h3>Þekking</h3>
           <p><strong>Managed Services & Infrastructure</strong></p>
-          <p>Margra ára reynsla af rekstri, þjónustu, innviðum og tæknilausnum fyrir fyrirtæki.</p>
+          <p>Þróun þjónustuframboðs, ráðgjöf, söluverkefni, viðskiptatengsl og stefnumótun í upplýsingatækni.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Menntun</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Háskólinn á Bifröst</h3>
+          <p><strong>BS í Viðskiptafræði</strong></p>
+          <p>2019–2024</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>NTV</h3>
+          <p><strong>Network and System Administration</strong></p>
+          <p>2012–2013</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>NTV</h3>
+          <p><strong>Sales and Marketing</strong></p>
+          <p>2011</p>
         </div>
       </div>
     </section>
@@ -223,14 +321,28 @@
     <section>
       <h2>Persónulegt</h2>
       <p>
-        Búsettur í Hafnarfirði. Fjölskyldumaður, íþróttaáhugamaður og áhugamaður
-        um góða sjávarrétti. Stuðningsmaður Manchester United og FH.
+        Búsettur í Hafnarfirði, fjölskyldumaður og mikill íþróttaáhugamaður.
       </p>
+      <p>
+        Stuðningsmaður Manchester United og FH.
+      </p>
+      <p>
+        Áhugamaður um góða sjávarrétti, tækni og nýjar leiðir til að tengja saman fólk,
+        ferla og tæknilausnir.
+      </p>
+    </section>
+
+    <section>
+      <h2>Hafa samband</h2>
+      <p>📧 <a href="mailto:arnirunarjr@gmail.com">arnirunarjr@gmail.com</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/%C3%A1rni-r%C3%BAnar-birnuson-20a587103/" target="_blank">LinkedIn</a></p>
+      <p>🌐 arnirunarjr.me</p>
     </section>
 
     <footer>
       <p>© 2026 Árni Rúnar Birnuson · arnirunarjr.me</p>
     </footer>
+
   </main>
 </body>
 </html>
