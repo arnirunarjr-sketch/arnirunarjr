@@ -1,26 +1,202 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-    <meta charset="UTF-8">
-    <title>Árni Rúnar Birnuson</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Árni Rúnar Birnuson</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 24px;
+    }
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+    .tag {
+      color: #f59e0b;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin: 16px 0;
+      color: white;
+    }
+    h2 {
+      color: white;
+      font-size: 32px;
+      margin-top: 60px;
+    }
+    h3 {
+      color: #f59e0b;
+      margin-bottom: 8px;
+    }
+    .lead {
+      font-size: 22px;
+      max-width: 760px;
+      color: #cbd5e1;
+    }
+    .buttons {
+      margin-top: 32px;
+    }
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .primary {
+      background: #f59e0b;
+      color: #111827;
+    }
+    .secondary {
+      border: 1px solid #475569;
+      color: #e5e7eb;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .timeline {
+      border-left: 2px solid #334155;
+      padding-left: 24px;
+    }
+    .timeline-item {
+      margin-bottom: 28px;
+    }
+    footer {
+      margin-top: 80px;
+      padding: 30px 0;
+      border-top: 1px solid #1f2937;
+      color: #94a3b8;
+    }
+    a {
+      color: #f59e0b;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Árni Rúnar Birnuson</h1>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="tag">Business Development · IT Advisory · Managed Services</div>
+        <h1>Árni Rúnar Birnuson</h1>
+        <p class="lead">
+          Ég hjálpa fyrirtækjum að tengja saman tækni, öryggi, rekstur og viðskiptalegan árangur.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="mailto:arnirunarjr@gmail.com">Hafa samband</a>
+          <a class="button secondary" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
 
-    <p>Business Development hjá Tölvuþjónustunni.</p>
+    <section>
+      <h2>Um mig</h2>
+      <p>
+        Ég hef starfað í upplýsingatækni í yfir áratug með áherslu á rekstur,
+        þjónustu, innviði og viðskiptaþróun. Ferillinn minn spannar allt frá
+        daglegum IT rekstri og þjónustuborði yfir í stefnumótun, ráðgjöf,
+        öryggismál og þróun þjónustuframboðs.
+      </p>
+      <p>
+        Í dag starfa ég við viðskiptaþróun hjá Tölvuþjónustunni þar sem ég vinn
+        með fyrirtækjum að því að hámarka virði upplýsingatækninnar, bæta
+        rekstraröryggi og draga úr tækniskuld.
+      </p>
+    </section>
 
-    <h2>Um mig</h2>
+    <section>
+      <h2>Sérsvið</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Managed Services</h3>
+          <p>Daglegur rekstur upplýsingatækni, þjónustuborð, innviðir, vöktun og rekstraröryggi.</p>
+        </div>
+        <div class="card">
+          <h3>Microsoft Cloud</h3>
+          <p>Microsoft 365, Intune, Entra ID, Teams, öryggi og nútímavæðing vinnuumhverfis.</p>
+        </div>
+        <div class="card">
+          <h3>Cyber Security</h3>
+          <p>Öryggisráðgjöf, áhættugreiningar, veikleikastjórnun og umbætur á öryggisstöðu.</p>
+        </div>
+        <div class="card">
+          <h3>AI & Automation</h3>
+          <p>Hagnýting gervigreindar, sjálfvirknivæðing og betri nýting tækni í daglegum rekstri.</p>
+        </div>
+      </div>
+    </section>
 
-    <p>
-        Ég starfa við viðskiptaþróun, upplýsingatækni og ráðgjöf.
-        Hef starfað í tæknigeiranum í yfir áratug og hef mikinn áhuga á
-        þjónustu, rekstri og tæknilausnum sem skila raunverulegum árangri.
-    </p>
+    <section>
+      <h2>Ferill</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Tölvuþjónustan</h3>
+          <p><strong>Business Development</strong></p>
+          <p>Þróun þjónustuframboðs, ráðgjöf, söluverkefni, viðskiptatengsl og stefnumótun í upplýsingatækni.</p>
+        </div>
 
-    <h2>Hafðu samband</h2>
+        <div class="timeline-item">
+          <h3>Nova</h3>
+          <p><strong>Head of IT Operations</strong></p>
+          <p>Leiddi þróun og stöðugleika í innri upplýsingatækni, þjónustu, rekstri og umbótaverkefnum.</p>
+        </div>
 
-    <p>
-        LinkedIn | Netfang
-    </p>
+        <div class="timeline-item">
+          <h3>Þekking</h3>
+          <p><strong>Managed Services & Infrastructure</strong></p>
+          <p>Margra ára reynsla af rekstri, þjónustu, innviðum og tæknilausnum fyrir fyrirtæki.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mín nálgun</h2>
+      <p>
+        Tækni á ekki að vera markmið í sjálfu sér. Góð upplýsingatækni styður við
+        rekstur, dregur úr áhættu og gerir fólki kleift að vinna betur.
+      </p>
+      <p>
+        Ég legg áherslu á að tengja saman fólk, ferla og tækni til að skapa
+        raunverulegt virði fyrir fyrirtæki.
+      </p>
+    </section>
+
+    <section>
+      <h2>Persónulegt</h2>
+      <p>
+        Búsettur í Hafnarfirði. Fjölskyldumaður, íþróttaáhugamaður og áhugamaður
+        um góða sjávarrétti. Stuðningsmaður Manchester United og FH.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Árni Rúnar Birnuson · arnirunarjr.me</p>
+    </footer>
+  </main>
 </body>
 </html>
